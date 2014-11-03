@@ -1,0 +1,8 @@
+{
+  "name": "my-project",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "sir-trevor-js": "0.3.0"
+  }
+}

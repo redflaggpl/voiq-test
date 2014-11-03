@@ -1,0 +1,73 @@
+@import "bootstrap/bootstrap.less"; // Please don't touch core bootstrap files
+@import "font-awesome-4.1.0/less/font-awesome.less"; // Please don't touch core flat-ui files
+@import "admin-lte/AdminLTE.less"; // Please don't touch core flat-ui files
+@import "spaces.less"; // Please don't touch core flat-ui files
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {  }
+
+.editable-click, 
+a.de-editable, 
+a.editable-click, 
+a.editable-click:hover {
+	text-decoration: none;
+	border-bottom: dashed 1px @blue;
+}
+
+.form-control.error,
+.error > .form-control {
+    border-color: @red;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.form-control.error + .help-block, 
+.error > .help-block, 
+span.required {
+    color: @red;
+}
+
+table.table {
+    background-color: #ffffff;
+}
+
+.alert {
+  margin-left: 0;
+  position: relative;
+}
+
+.modal-body {
+	padding: 15px 30px;
+}
+.stick-image {
+	img {
+		margin: 0 auto;
+	}
+}
+.cursor-move {
+	cursor: move;
+}
+
+.fa-spin {
+	-webkit-animation: spin 600ms infinite linear;
+	-moz-animation: spin 600ms infinite linear;
+	-o-animation: spin 600ms infinite linear;
+	animation: spin 600ms infinite linear;
+}
+
+section.content {
+	padding-top: 5px;
+}
+
+.text-white {
+	color: #ffffff;
+}
