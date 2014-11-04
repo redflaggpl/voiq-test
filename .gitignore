@@ -1,3 +1,2 @@
 /.htaccess
 error_log
-/protected/config/db.php
