@@ -9,8 +9,10 @@ $this->breadcrumbs=array(
 
 ?>
 <?php
-  if(Yii::app()->getSession()->get('message')!== null)
+  if(Yii::app()->getSession()->get('message')!== null){
     echo '<div class="bg-primary">'.Yii::app()->getSession()->get('message').'</div>';
+    Yii::app()->getSession()->remove('message');
+  }
  ?>
 <div class="col-lg-12">
 <section class="panel">
