@@ -78,7 +78,8 @@ class CrmfilesController extends CmsController
 			
 			if($return === true) {
 				$transaction->commit();
-				Yii::app()->user->setFlash('success', 'Congratulations!');
+				Yii::app()->user->setFlash('success', 'Congrats!');
+				Yii::app()->getSession()->add('message', 'Cool!');
 				$this->redirect(array('view','id'=>$model->id));
 
 			}
@@ -86,6 +87,7 @@ class CrmfilesController extends CmsController
 			{
 				$transaction->rollBack();
 				Yii::app()->user->setFlash('error', $return);
+				Yii::app()->getSession()->add('message', $return);
 			}
 		}
 

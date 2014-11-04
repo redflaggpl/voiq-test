@@ -7,5 +7,9 @@ $this->breadcrumbs=array(
 	Yii::t('app','Create'),
 );
  ?>
+ <?php
+ 	if(Yii::app()->getSession()->get('message')!== null)
+ 		echo '<div class="bg-primary">'.Yii::app()->getSession()->get('message').'</div>';
+ ?>
  <div class="col-lg-12">
 	<?php echo $this->renderPartial('_form', array('model'=>$model)); ?></div>
